@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@font-face { font-family: 'TTTogether'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/TTTogetherA.woff') format('woff'); font-weight: normal; font-style: normal; } 
+a#topBtn {
+    text-decoration: none;
+    position: fixed;
+    bottom: 120px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    /* color: #4f8397; */
+    /* background: rgba(255, 255, 255, .5); */
+    color: #fff;
+    background: rgba(79, 131, 151, .7); 
+    /* background:#4d9bbe; */
+    box-shadow: 0 0 15px #4f839770;
+    border-radius: 50%;
+    
+    text-align: center;
+    line-height: 58px !important;
+    font: normal 16px "TTTogether";     
+     text-transform: lowercase; 
+    z-index: 9999; /* 포지션을 먼저 지정후 z-좌표(레이어) : 9999입니다. */ 
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+a#topBtn i{
+    position: relative;
+    top: 8px;
+}
+ 
+a#topBtn:hover {
+    /* color: #fff;
+    background: rgba(79, 131, 151, .7); */
+    background: #fff;
+    color: rgba(79, 131, 151, .7); 
+    /* color: #4d9bbe; */
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.main-menu .menu-item a::after {position: absolute; content:""; display: block; 
+    border-bottom: 2px solid #fff; transition: all 250ms ease-out; left: 50%; width: 0;
+}
+
+.main-menu .menu-item a:hover::after{    
+    transition: all 250ms ease-out; left: 0%; width: 100%;
+}
+
+.main-menu .menu-item.active a::after{
+    transition: all 250ms ease-out; left: 0%; width: 100%;
+    border-bottom: 2px solid #fff;
+}
+
+
+
+
+.main-menu .menu-item a.telegram img{    
+    width: 30px;
+}
+.main-menu .menu-item a.kakaotalk img{    
+    width: 30px;
+}
+.main-menu .menu-item a.telegram::after , .main-menu .menu-item a.kakaotalk::after{
+    border: 0px;
+}
+.subheading i{
+    /* color: #5bb6db; */
+    position: relative;
+    top: 2px;
+}
+.top-banner .heading {
+    line-height: 70px;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    display: none;
+}
+
+.active #nav-toggle span:before {
+    background: #fff !important;
+}
+.active #nav-toggle span:after {
+    background: #fff !important;
+}
+@media (max-width: 767px){
+    .nav-menu .main-menu>.menu-item:hover>a {
+        color: #fff;
+        background-color: transparent;
+    }
+}
+@media (max-width: 576px){
+    .top-banner .heading {
+        line-height: 55px;
+    }
+    #maintable{
+        width: 1030px;
+    }
+    #ktline-img{
+        overflow: scroll;
+    }
+}
+#world-map {
+ width:inherit;
+}
+
+#world-map img{
+ width: 100%;
+}
+
+.pricing .price {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.service-wrap .service-section:hover  , .custom-card:hover{
+    box-shadow: 0 35px 35px 0 rgb(110 110 110 / 30%);
+    cursor: pointer;
+}
+
+.pricing.special .wrapper {
+ 	box-shadow: 2px 2px 2px rgb(0 0 0 / 30%);
+    
+    cursor: pointer;
+}
+
+.pricing.special .wrapper:hover {
+ box-shadow: 2px 35px 35px  rgb(110 110 110 / 30%);
+}
+
+
+
+.best-plans .table td:first-child {    
+    min-width:50px;  
+}
+
+.pricing .price {
+    font-size: 25px;
+}
+
+.services .service-wrap .service-section {
+    padding: 30px;
+}
+.sec-main {  
+    padding: 80px 40px;
+}
+.pricing .wrapper .top-content {
+   text-align: center;
+}
+.pricing .list-info {
+    padding: 20px 35px 40px 35px;
+}
+
+
+
+
+.menu-wrap.fixed {
+    background: linear-gradient(89deg,#05172d 3%,#68cef5 98%);   
+}
+.top-header.overlay:before {
+    background-color: #05172D;
+}
+.btn-default-yellow-fill {
+    background-color: #4892b4!important;
+    color: #fff!important;    
+}
+.bg-purple2 {
+    background-color: #4892b4!important;
+}
+.total-grad-inverse {
+    /* background: linear-gradient(240deg,#1697bf 0%,#68cef5 100%); */
+    background: #05172D;
+}
+.copyrigh a{
+    color: #4892b4;
+}
+.blog .sidebar .categories .heading a.active {
+    color: #4892b4;
+}
+
+#owl-demo{
+     box-shadow: 2px 35px 35px  rgb(110 110 110 / 30%);
+}
+
+
+element.style {
+    box-shadow: 2px 35px 35px rgb(110 110 110 / 30%);
+    margin-bottom: 110px;
+}
+.top-header {
+    margin-bottom: 20px;
+    box-shadow: 2px 12px 12px rgba(0,0,0,0.3);
+}
+.cloudflare-header{
+    margin-bottom: 0px;
+}
